@@ -1,0 +1,8 @@
+<h2>{{temp_titulo}}</h2>
+<h3>{{request.user}}</h3>
+<hr>
+</br>
+<form method="POST" action="">{% csrf_token %}
+{{el_form.as_p}}
+<input type='submit' value='Registrame'/>
+</form>
